@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers"
+    "\\bin",
+    "\\Controllers",
+    "\\Models",
+    "\\Properties"
   ],
-  "SelectedNode": "\\FoodAPI.sln",
+  "SelectedNode": "\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

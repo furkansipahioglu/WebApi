@@ -42,6 +42,15 @@ namespace FoodAPI.Repositories
             return await _context.Foods.FindAsync(id);
         }
 
+        public async Task<Food> Get(string name)
+        {
+            var foodbyname = await _context.Foods.FindAsync(name);
+
+            return foodbyname;
+        }
+
+
+
         public async Task Update(Food food)
         {
             _context.Entry(food).State = EntityState.Modified;

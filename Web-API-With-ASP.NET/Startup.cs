@@ -31,6 +31,15 @@ namespace FoodAPI
         {
             services.AddScoped<taskFoodRepository, FoodRepository>();
             services.AddDbContext<FoodContext>(o => o.UseSqlite("Data source=foods.db"));
+            services.AddCors(o => {
+                o.AddPolicy("AllowAll", builder =>
+                     builder.AllowAnyOrigin()
+                     .AllowAnyMethod()
+                     .AllowAnyHeader());
+
+
+            });
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -49,6 +58,8 @@ namespace FoodAPI
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors("AllowAll");
 
             app.UseRouting();
 

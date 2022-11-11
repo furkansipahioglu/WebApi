@@ -10,6 +10,7 @@ namespace FoodAPI.Repositories
     {
         Task<IEnumerable<Food>> Get();
         Task<Food> Get(int id);
+        Task<Food> Get(string name);
         Task<Food> Create(Food food);
         Task Update(Food food);
         Task Delete(int id);

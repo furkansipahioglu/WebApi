@@ -26,10 +26,18 @@ namespace FoodAPI.Controllers
             return await _foodRepository.Get();
         }
 
-        [HttpGet("{id}")]
+        [HttpGet, Route("{id:int}")]
+        
         public async Task<ActionResult<Food>> GetFoods(int id)
         {
             return await _foodRepository.Get(id);
+        }
+
+        [HttpGet , Route("GetByName/{name}")]
+        
+        public async Task<ActionResult<Food>> GetFoodsByName(string name)
+        {
+            return await _foodRepository.Get(name);
         }
 
         [HttpPost]
