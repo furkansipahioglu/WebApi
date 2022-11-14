@@ -30,6 +30,9 @@ namespace FoodAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<taskFoodRepository, FoodRepository>();
+
+
+
             services.AddDbContext<FoodContext>(o => o.UseSqlite("Data source=foods.db"));
             services.AddCors(o => {
                 o.AddPolicy("AllowAll", builder =>
@@ -53,9 +56,12 @@ namespace FoodAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "FoodAPI v1"));
+               
             }
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "FoodAPI v1"));
 
             app.UseHttpsRedirection();
 

@@ -1124,11 +1124,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\furka\\Documents\\WebApi\\Web-API-With-ASP.NET\\FoodAPI.csproj",
+      "projectUniqueName": "C:\\Users\\furka\\Desktop\\Web-API-With-ASP.NET\\FoodAPI.csproj",
       "projectName": "FoodAPI",
-      "projectPath": "C:\\Users\\furka\\Documents\\WebApi\\Web-API-With-ASP.NET\\FoodAPI.csproj",
+      "projectPath": "C:\\Users\\furka\\Desktop\\Web-API-With-ASP.NET\\FoodAPI.csproj",
       "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\furka\\Documents\\WebApi\\Web-API-With-ASP.NET\\obj\\",
+      "outputPath": "C:\\Users\\furka\\Desktop\\Web-API-With-ASP.NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
