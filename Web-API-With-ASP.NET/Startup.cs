@@ -30,6 +30,7 @@ namespace FoodAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<taskFoodRepository, FoodRepository>();
+            services.AddScoped<taskAdminRepository, AdminRepository>();
 
 
 
